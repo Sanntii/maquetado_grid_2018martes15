@@ -38,11 +38,26 @@ nav {
 section {
     background-color: blue;
   
-  grid-column: 2 / -1
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+  
+  
+  
+    
 }
 
 article {
     background-color: yellow;
+  border-radius: 10px;
+  padding: 10px;
+  
+  
+  
+  
+  
 }
 
 footer {
@@ -51,4 +66,11 @@ footer {
   grid-column: 1 / -1
 }
 
+section > h2 {
+    background-color: green;
+  
+  grid-column: 1 / -1
+    
+    
+}
 
