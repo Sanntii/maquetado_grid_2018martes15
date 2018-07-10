@@ -27,7 +27,7 @@ body {
 header {
     background-color: red;
   
-  grid-column: 1 / -1
+  grid-column: 1 / -1;
 }
 
 
@@ -38,7 +38,7 @@ nav {
 section {
     background-color: blue;
   
-  
+  grid-column: 2/ -2;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
@@ -63,18 +63,33 @@ article {
 footer {
     background-color: violet;
   
-  grid-column: 1 / -1
+  grid-column: 1 / -1;
 }
 
 section > h2 {
     background-color: green;
   
-  grid-column: 1 / -1
+  grid-column: 1 / -1;
     
     
 }
 
 header, footer, h2, h3 {
   text-align: center;
+  
+}
+
+
+
+
+aside {
+background-color: orange;
+  
+}
+
+
+#panelMsg {
+  background-color: orange;
+  grid-column: 1 / -1
   
 }
